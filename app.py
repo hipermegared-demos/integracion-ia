@@ -28,9 +28,6 @@ def ask_gemini():
             description: Respuesta de la IA.
             schema:
               type: object
-              properties:
-                message:
-                  type: string
         """
     data = request.get_json()
     p = data.get('prompt')
